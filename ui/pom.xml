@@ -3,7 +3,7 @@
     <parent>
         <groupId>org.teiid</groupId>
         <artifactId>komodo-parent</artifactId>
-        <version>0.0.5-SNAPSHOT</version>
+        <version>0.0.5.fuse-730001</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
     <!-- ================================================================== -->
@@ -14,7 +14,7 @@
     <description>Web tooling supporting the Teiid project.</description>
     <name>BeETLe Studio</name>
     <packaging>pom</packaging>
-    <version>0.0.5-SNAPSHOT</version>
+    <version>0.0.5.fuse-730001</version>
 
     <!-- ================================================================== -->
     <!-- Developers -->
