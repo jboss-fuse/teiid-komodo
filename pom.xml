@@ -162,9 +162,6 @@
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-deploy-plugin</artifactId>
-            <configuration>
-              <skip>true</skip>
-            </configuration>
           </plugin>
 
           <plugin>
@@ -782,19 +779,6 @@
     <developerConnection>scm:git:git@github.com:teiid/teiid-komodo.git</developerConnection>
     <url>http://github.com/teiid/teiid-komodo</url>
   </scm>
-
-  <distributionManagement>
-    <snapshotRepository>
-      <id>oss-sonatype-staging</id>
-      <name>oss-sonatype-staging</name>
-      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-    </snapshotRepository>
-    <repository>
-      <id>oss-sonatype-staging</id>
-      <name>Sonatype Staging Repository</name>
-      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
-    </repository>
-  </distributionManagement>
 
   <issueManagement>
     <system>jira</system>
