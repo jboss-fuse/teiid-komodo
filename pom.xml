@@ -26,7 +26,7 @@
 
   <groupId>org.teiid</groupId>
   <artifactId>komodo-parent</artifactId>
-  <version>0.0.5-SNAPSHOT</version>
+  <version>0.0.5.fuse-740005</version>
   <packaging>pom</packaging>
 
   <name>Komodo Parent</name>
@@ -39,7 +39,7 @@
 
     <!-- Image names -->
     <java.base.image>fabric8/s2i-java</java.base.image>
-    <fabric8.maven.plugin.version>3.5.41</fabric8.maven.plugin.version> <!-- or above 3.5.39 see THORN-1859 -->
+    <fabric8.maven.plugin.version>3.5.33.fuse-740016</fabric8.maven.plugin.version> <!-- or above 3.5.39 see THORN-1859 -->
     <maven.exec.plugin.version>1.2.1</maven.exec.plugin.version>
     <clean-maven-plugin-version>2.4.1</clean-maven-plugin-version>
     <frontend-maven-plugin-version>1.6</frontend-maven-plugin-version>
@@ -50,10 +50,10 @@
 
     <jackson.version>2.8.11</jackson.version>
     <json-patch.version>1.9</json-patch.version>
-    <kubernetes.client.version>3.1.4.fuse-710001</kubernetes.client.version>
+    <kubernetes.client.version>3.1.12.fuse-740014</kubernetes.client.version>
 
     <spring.version>4.3.20.RELEASE</spring.version>
-    <spring-boot.version>1.5.17.RELEASE</spring-boot.version>
+    <spring-boot.version>1.5.19.RELEASE</spring-boot.version>
     <spring-cloud.version>Dalston.SR5</spring-cloud.version>
 
     <swagger.version>1.5.19</swagger.version>
@@ -68,7 +68,7 @@
     <errorprone.version>2.3.1</errorprone.version>
 
     <!-- Global camel version used everywhere -->
-    <camel.version>2.21.0.fuse-720028</camel.version>
+    <camel.version>2.21.0.fuse-740024</camel.version>
 
     <dep.plugin.dependency.version>3.0.2</dep.plugin.dependency.version>
     <dep.plugin.surefire.version>2.21.0</dep.plugin.surefire.version> <!-- SUREFIRE-1422 -->
@@ -91,7 +91,7 @@
 
     <!-- Plugin versions -->
     <exec-maven-plugin.version>1.6.0</exec-maven-plugin.version>
-    <docker.maven.plugin.version>0.23.0</docker.maven.plugin.version>
+    <docker.maven.plugin.version>0.23.0.fuse-740005</docker.maven.plugin.version>
 
     <!-- Maven versions -->
     <maven-archetype-packaging.version>2.0</maven-archetype-packaging.version>
@@ -162,46 +162,6 @@
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-deploy-plugin</artifactId>
-            <configuration>
-              <skip>true</skip>
-            </configuration>
-          </plugin>
-
-          <plugin>
-            <groupId>org.sonatype.plugins</groupId>
-            <artifactId>nexus-staging-maven-plugin</artifactId>
-            <version>1.6.8</version>
-            <executions>
-              <execution>
-                <id>default-deploy</id>
-                <phase>deploy</phase>
-                <goals>
-                  <goal>deploy</goal>
-                </goals>
-              </execution>
-            </executions>
-            <configuration>
-              <nexusUrl>https://oss.sonatype.org/</nexusUrl>
-              <serverId>oss-sonatype-staging</serverId>
-            </configuration>
-          </plugin>
-
-          <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-gpg-plugin</artifactId>
-            <version>1.6</version>
-            <configuration>
-              <skip>false</skip>
-            </configuration>
-            <executions>
-              <execution>
-                <id>sign-artifacts</id>
-                <phase>verify</phase>
-                <goals>
-                  <goal>sign</goal>
-                </goals>
-              </execution>
-            </executions>
           </plugin>
 
           <plugin>
@@ -819,19 +779,6 @@
     <developerConnection>scm:git:git@github.com:teiid/teiid-komodo.git</developerConnection>
     <url>http://github.com/teiid/teiid-komodo</url>
   </scm>
-
-  <distributionManagement>
-    <snapshotRepository>
-      <id>oss-sonatype-staging</id>
-      <name>oss-sonatype-staging</name>
-      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-    </snapshotRepository>
-    <repository>
-      <id>oss-sonatype-staging</id>
-      <name>Sonatype Staging Repository</name>
-      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
-    </repository>
-  </distributionManagement>
 
   <issueManagement>
     <system>jira</system>
