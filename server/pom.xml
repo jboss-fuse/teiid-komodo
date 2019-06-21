@@ -19,7 +19,7 @@
   <parent>
     <groupId>org.teiid</groupId>
     <artifactId>komodo-parent</artifactId>
-    <version>0.0.5-SNAPSHOT</version>
+    <version>0.0.5.fuse-740008</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
 
@@ -126,7 +126,7 @@
 	<version.io.opentracing.contrib>1.0.1</version.io.opentracing.contrib>
 	
     <version.commons.io>2.5</version.commons.io>
-    <version.org.teiid>12.2.0</version.org.teiid>
+    <version.org.teiid>12.2.2.fuse-740002</version.org.teiid>
 
     <!-- Instruct the build to use only UTF-8 encoding for source code -->
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -152,13 +152,13 @@
     <version.org.jboss.spec.jboss-javaee-7.0>1.0.4.Final</version.org.jboss.spec.jboss-javaee-7.0>
     <version.org.jboss.xnio>3.5.4.Final</version.org.jboss.xnio>
 
-    <version.modeshape>5.4.1.Final</version.modeshape>
-    <version.teiid.modeshape>1.0.1.Final</version.teiid.modeshape>
+    <version.modeshape>5.4.1.Final.fuse-740017</version.modeshape>
+    <version.teiid.modeshape>1.0.1.Final.fuse-740010</version.teiid.modeshape>
     <version.postgresql>42.1.4</version.postgresql>
     <version.xerces>2.11.0</version.xerces>
     
     <!-- this is simply a version no dependencies involved right now -->
-    <version.springboot.teiid>1.1.0</version.springboot.teiid>
+    <version.springboot.teiid>1.1.1.fuse-740007</version.springboot.teiid>
     
     <version.gson>2.2.4</version.gson>
     <version.apache.commons.codec>1.10</version.apache.commons.codec>
