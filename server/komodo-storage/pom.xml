@@ -11,7 +11,7 @@
     <parent>
       <groupId>org.teiid</groupId>
       <artifactId>komodo-server-parent</artifactId>
-      <version>0.0.5-SNAPSHOT</version>
+      <version>0.0.5.fuse-740013</version>
       <relativePath>../pom.xml</relativePath>
     </parent>
   <artifactId>komodo-storage</artifactId>
